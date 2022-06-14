@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #00334E; 
+    text-align: center;
+}
+body{
+    background-color: #EFEAD8;
+}
+
+#welcome{
+    color: #EFEAD8;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size:8vw;
+    width: 100%;
+    margin-top:20vh;
+margin-bottom: 2vh;
+margin-left: -2vw;
+}
+#desc{
+    color: #EFEAD8;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    width: 69%;
+    margin-left: 8.5vw;
+    margin-top:-2vh;
+}
+#btn1{
+    width: 25vw;
+    height: 8vh;
+    margin-top: 1vh;
+    background-color: #EFEAD8;
+    font-family: 'roboto', sans-serif;
+    color:#00334E;
+    border: 0px;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+.login{
+ 
+    position: fixed;
+    top: 0;
+    text-align: center;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+#desc1{
+    color:#00334eb6; 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+ margin-top: 10vh;
+    font-size: 1.5vw;
+
+  
+    
+}
+.inp{
+   
+    height: 8vh;
+    font-family: sans-serif;
+  /* text-align: left; */
+  padding-left: 2vh;
+  width: 25vw;
+  border: 0px;
+  color: #EFEAD8;
+  background-color:#00334eb2;
+}
+.btn{
+    width: 26vw;
+    height: 8vh;
+    margin-top: 1vh;
+    background-color:#00334ed4;
+    font-family: 'roboto', sans-serif;
+    color: #EFEAD8;
+    border: 0px;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+a{
+    /* text-decoration: none; */
+    color: #00334e;
+    font-weight: 600;
+    font-size: 0.9vw;
+    font-family: 'Roboto Slab', serif;
+   
+}
+#cen{
+    margin-top: 25vh;
+}
