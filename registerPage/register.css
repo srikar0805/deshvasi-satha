@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
+
+
+body{
+    background-color: #00334E;
+}
+
+#welcome{
+    color: #EFEAD8;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size:3.5vw;
+  
+    margin-top: 1.5vh;
+    /* margin-left: 3vw; */
+    margin-bottom: 2vh;
+
+}
+.inp{
+   
+    height: 5vh;
+    font-family: sans-serif;
+  /* text-align: left; */
+  padding-left: 2vh;
+  width: 15vw;
+  border: 0px;
+  color: #00334e;
+  margin: 1vh;
+  background-color:#e6dcba;
+
+}
+label{
+    color: #EFEAD8;
+    font-family: 'slab', sans-serif;
+}
+.inp1{
+   
+    height: 5vh;
+    font-family: sans-serif;
+  /* text-align: left; */
+  padding-left: 2vh;
+  width: 32.25vw;
+  border: 0px;
+  color: #00334e;
+  margin: 1vh;
+  background-color:#e6dcba;
+}
+
+.btn{
+    width: 26vw;
+    height: 8vh;
+    margin-top: 1vh;
+    background-color:#1de420cc;
+    font-family: 'roboto', sans-serif;
+    color: #EFEAD8;
+    border: 0px;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+#form{
+    text-align: center;
+}
