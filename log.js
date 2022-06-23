@@ -9,7 +9,7 @@ form.addEventListener ('submit',(e) =>{
         messages.push('Username only 20 characters')
     }
 
-    if(nam.value.length>20) {
+    if(pass.value.length<8) {
         messages.push('Password minimum 8 characters')
     }
 
