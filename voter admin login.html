@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>PartyWorker Admin</title>
+    <link rel="stylesheet" href="sty.css">
+    <script defer src="log.js"></script>
+    <title>Voter Admin login</title>
 </head>
 
-<body style=" background-color: #EFEAD8;">
+<body>
     <nav class="navbar navbar-custom navbar-fixed-top main-navigation">
 
         <a class="navbar-brand navbar-center navbar-header  nav-menu" href="#">
@@ -36,26 +35,31 @@
         </ul>
 
     </nav>
-    <br><br><br><br><br><br><br>
-    <h2 style="margin-left: 45%;">Login Page</h2><br>
-    <section class='login' id='login'>
-        <div class='head'>
-            <h1 class='company'>Party Worker Admin</h1>
-        </div>
-        <p class='msg'>Welcome back</p>
-        <div class='form'>
-            <form>
-                <input type="text" placeholder='Username' class='text' id='username' required><br>
-                <input type="password" placeholder='••••••••••••••' class='password'><br>
-                <a href="#" class='btn-login' id='do-login'>Login</a>
-                <a href="#" class='forgot'>Forgot?</a>
-            </form>
-        </div>
-    </section>
-    <!-- partial -->
-    <script src="script.js"></script>
 
-    <div class="footer-dark">
+    <div class="login">
+        <h1>Voter Admin Login</h1>
+        <div id="error"></div>
+        <form id="form" action="/" method="GET">
+            <div class="entry">
+                <input id="name" type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="entry">
+                <input id="pass" type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div>
+                <button>Login</button>
+            </div>
+            <div class="forgot">
+                <a href="ret">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="footer-dark">
         <footer>
             <div class="container">
                 <div class="row">
@@ -80,15 +84,16 @@
                         <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
                     </div>
                     <div class="col item social">
-                        <a href="#"><i class="icon ion-social-facebook"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
-                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                      <a href="#"><i class="icon ion-social-facebook"></i></a>
+                      <a href="#"><i class="icon ion-social-twitter"></i></a>
+                      <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                      <a href="#"><i class="icon ion-social-instagram"></i></a>
                     </div>
                 </div>
                 <p class="copyright">Company Name © 2018</p>
             </div>
         </footer>
+    </div> -->
 </body>
 
 </html>
