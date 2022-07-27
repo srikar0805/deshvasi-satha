@@ -1,23 +1,26 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const dotenv = require('dotenv');
-const { request } = require('http');
-const { response } = require('express');
-dotenv.config();
+const mysql = require("mysql2");
+const express = require("express");
+const bodyParser = require("body-parser");
+var app = express();
+app.use(bodyParser.json());
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+var mysqlConnection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "password",
+    database: "webproject",
+    multipleStatements: true
+});
 
-
-
-app.get('/pwhome', (request, response) => {
-    response.json({
-        success: true
-    });
+mysqlConnection.connect((err) => {
+    if (!err) {
+        console.log("Connected");
+    } else {
+        console.log("Connection Failed");
+    }
 })
 
 
 
-app.listen(process.env.PORT, () => console.log("Webpage is running."));
+
+app.listen(3000);
