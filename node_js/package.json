@@ -43,6 +43,7 @@
         "has": "^1.0.3",
         "has-flag": "^4.0.0",
         "has-symbols": "^1.0.3",
+        "html": "^1.0.0",
         "http-errors": "^2.0.0",
         "iconv-lite": "^0.4.24",
         "inherits": "^2.0.4",
