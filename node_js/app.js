@@ -31,6 +31,36 @@ app.get("/", (req, res) => {
     res.render("home")
 })
 
+app.get("/voteradminlogin", (req, res) => {
+    res.render("voteradmnilogin")
+})
 
+app.get("/voterlogin", (req, res) => {
+    res.render("voterlogin")
+})
+
+app.get("/partyworkerlogin", (req, res) => {
+    res.render("party workerrs login")
+})
+
+app.get("/partyworkeradminlogin", (req, res) => {
+    res.render("pwadminlogin")
+})
+
+app.get("/partyworker", (req, res) => {
+    res.render("pwhome")
+})
+
+app.get("/register", (req, res) => {
+    res.render("register")
+})
+
+app.get("/voter", (req, res) => {
+    res.render("voterhome")
+})
+
+app.get("/workeradminhome", (req, res) => {
+    res.render("workeradminhome")
+})
 
 app.listen(3000);
