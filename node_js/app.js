@@ -32,15 +32,15 @@ app.get("/", (req, res) => {
 })
 
 app.get("/voteradminlogin", (req, res) => {
-    res.render("voteradmnilogin")
+    res.render("voteradminlogin")
 })
 
 app.get("/voterlogin", (req, res) => {
-    res.render("voterlogin")
+    res.render("voter login")
 })
 
 app.get("/partyworkerlogin", (req, res) => {
-    res.render("party workerrs login")
+    res.render("party workers login")
 })
 
 app.get("/partyworkeradminlogin", (req, res) => {
@@ -62,5 +62,11 @@ app.get("/voter", (req, res) => {
 app.get("/workeradminhome", (req, res) => {
     res.render("workeradminhome")
 })
+
+app.get("/voteradminhome", (req, res) => {
+    res.render("voteradminhome")
+})
+
+
 
 app.listen(3000);
