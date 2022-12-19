@@ -14,11 +14,9 @@
         <p id="welcome">Voter Registration</p>
     </div>
     <div id="form">
-        <form action="/action_page.php">
+        <form novalidate action="/voterlogin" method="POST">
 
-            <input type="text" id="u" name="fname" placeholder="First Name" class="inp">
-
-            <input type="text" id="p" name="lname" placeholder="Last Name" class="inp">
+            <input type="text" id="u" name="username" placeholder="First Name" class="inp">
             <br>
 
             <input type="date" id="dob" name="dob" placeholder="Date of birth:" class="inp1"> <br>
@@ -26,14 +24,14 @@
             <br> <input type="text" id="state" name="state" placeholder="State" class="inp">
             <input type="text" id="dist" name="dist" placeholder="District" class="inp"> <br>
             <input type="text" id="mandal" name="mandal" placeholder="Mandal" class="inp1"><br>
-            <input type="text" id="const" name="const" placeholder="Constituency" class="inp1">
+            <input type="text" id="constituency" name="constituenc" placeholder="Constituency" class="inp1">
             <br> <input type="text" id="ward" name="ward" placeholder="Ward number" class="inp1"> <br>
-            <input type="text" id="const" name="const" placeholder="Voter Id" class="inp1">
+            <input type="text" id="voter_id" name="voter_id" placeholder="Voter Id" class="inp1">
             <br>
             <input type="text" id="u" name="fname" placeholder="Username" class="inp1">
             <br>
-            <input type="text" id="p" name="lname" placeholder="Password" class="inp">
-            <input type="text" id="p" name="lname" placeholder="Confirm Password" class="inp"> <br>
+            <input type="text" id="p" name="password" placeholder="Password" class="inp">
+            <input type="text" id="p" name="cpassword" placeholder="Confirm Password" class="inp"> <br>
             <input type="checkbox" id="agree" placeholder=""> <label for="agree">I agree to the t&c </label><br>
             <input type="submit" value="Register" class="btn">
         </form>
