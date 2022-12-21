@@ -42,6 +42,12 @@ mysqlConnection.connect((err) => {
         if (err) throw err;
         console.log("Party Worker Admin Table created");
     });
+    var sql =
+      "CREATE TABLE IF NOT EXISTS deleted_voter (voter_id INT AUTO_INCREMENT PRIMARY KEY, voter_name VARCHAR(255), voter_password VARCHAR(25), voter_id VARCHAR(255) NOT NULL UNIQUE, voter_wardnumber VARCHAR(5), voter_constituency VARCHAR(255), voter_mandal VARCHAR(255), voter_district VARCHAR(255), voter_state VARCHAR(255), voter_phone VARCHAR(10), voter_dob DATE)";
+    mysqlConnection.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("Deleted Voter Table created");
+    });
     
 
 })
@@ -51,7 +57,6 @@ mysqlConnection.connect((err) => {
 app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
-function CreateTable()
 
 app.get("/", (req, res) => {
     res.render("home")
