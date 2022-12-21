@@ -26,24 +26,26 @@ mysqlConnection.connect((err) => {
         if (err) throw err;
         console.log("Database created");
     });
-    var sql = "CREATE TABLE IF NOT EXISTS voter (voter_id INT AUTO_INCREMENT PRIMARY KEY, voter_name VARCHAR(255), voter_password VARCHAR(25), voter_id VARCHAR(255) NOT NULL UNIQUE, voter_wardnumber VARCHAR(5), voter_constituency VARCHAR(255), voter_mandal VARCHAR(255), voter_district VARCHAR(255), voter_state VARCHAR(255), voter_phone VARCHAR(10), voter_dob DATE)";
+    var sql =
+      "CREATE TABLE IF NOT EXISTS voter (voter_no INT AUTO_INCREMENT PRIMARY KEY, voter_name VARCHAR(255), voter_password VARCHAR(25), voter_id VARCHAR(255) NOT NULL UNIQUE, voter_wardnumber VARCHAR(5), voter_constituency VARCHAR(255), voter_mandal VARCHAR(255), voter_district VARCHAR(255), voter_state VARCHAR(255), voter_phone VARCHAR(10), voter_dob DATE)";
     mysqlConnection.query(sql, function (err, result) {
-        if (err) throw err;
-        console.log("Voter Table created");
-    });
-    var sql = "CREATE TABLE IF NOT EXISTS party_worker (pw_id INT AUTO_INCREMENT PRIMARY KEY, pw_name VARCHAR(255), pw_username VARCHAR(255), pw_id VARCHAR(255) NOT NULL UNIQUE, pw_password VARCHAR(25), pw_wardnumber VARCHAR(5), pw_constituency VARCHAR(255), pw_mandal VARCHAR(255), pw_district VARCHAR(255), pw_state VARCHAR(255), pw_phone VARCHAR(10), pw_dob DATE)";
-    mysqlConnection.query(sql, function (err, result) {
-        if (err) throw err;
-        console.log("Party Worker Table created");
-    });
-    var sql = "CREATE TABLE IF NOT EXISTS party_worker_admin (pw_admin_id INT AUTO_INCREMENT PRIMARY KEY, pw_admin_name VARCHAR(255), pw_admin_username VARCHAR(255), pw_admin_id VARCHAR(255) NOT NULL UNIQUE, pw_admin_password VARCHAR(25), pw_admin_phone VARCHAR(10), pw_admin_dob DATE)";
-    mysqlConnection.query(sql, function
-        (err, result) {
-        if (err) throw err;
-        console.log("Party Worker Admin Table created");
+      if (err) throw err;
+      console.log("Voter Table created");
     });
     var sql =
-      "CREATE TABLE IF NOT EXISTS deleted_voter (voter_id INT AUTO_INCREMENT PRIMARY KEY, voter_name VARCHAR(255), voter_password VARCHAR(25), voter_id VARCHAR(255) NOT NULL UNIQUE, voter_wardnumber VARCHAR(5), voter_constituency VARCHAR(255), voter_mandal VARCHAR(255), voter_district VARCHAR(255), voter_state VARCHAR(255), voter_phone VARCHAR(10), voter_dob DATE)";
+      "CREATE TABLE IF NOT EXISTS party_worker (pw_no INT AUTO_INCREMENT PRIMARY KEY, pw_name VARCHAR(255), pw_username VARCHAR(255), pw_id VARCHAR(255) NOT NULL UNIQUE, pw_password VARCHAR(25), pw_wardnumber VARCHAR(5), pw_constituency VARCHAR(255), pw_mandal VARCHAR(255), pw_district VARCHAR(255), pw_state VARCHAR(255), pw_phone VARCHAR(10), pw_dob DATE)";
+    mysqlConnection.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("Party Worker Table created");
+    });
+    var sql =
+      "CREATE TABLE IF NOT EXISTS party_worker_admin (pw_admin_no INT AUTO_INCREMENT PRIMARY KEY, pw_admin_name VARCHAR(255), pw_admin_username VARCHAR(255), pw_admin_id VARCHAR(255) NOT NULL UNIQUE, pw_admin_password VARCHAR(25), pw_admin_phone VARCHAR(10), pw_admin_dob DATE)";
+    mysqlConnection.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("Party Worker Admin Table created");
+    });
+    var sql =
+      "CREATE TABLE IF NOT EXISTS deleted_voter (voter_no INT AUTO_INCREMENT PRIMARY KEY, voter_name VARCHAR(255), voter_password VARCHAR(25), voter_id VARCHAR(255) NOT NULL UNIQUE, voter_wardnumber VARCHAR(5), voter_constituency VARCHAR(255), voter_mandal VARCHAR(255), voter_district VARCHAR(255), voter_state VARCHAR(255), voter_phone VARCHAR(10), voter_dob DATE)";
     mysqlConnection.query(sql, function (err, result) {
       if (err) throw err;
       console.log("Deleted Voter Table created");
