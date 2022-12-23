@@ -76,6 +76,7 @@
         "serve-static": "^1.15.0",
         "setprototypeof": "^1.2.0",
         "side-channel": "^1.0.4",
+        "sqlite3": "^5.1.4",
         "sqlstring": "^2.3.1",
         "statuses": "^2.0.1",
         "string_decoder": "^1.1.1",
@@ -95,6 +96,6 @@
     "license": "ISC",
     "devDependencies": {
         "@types/express": "^4.17.15",
-        "nodemon": "^2.0.19"
+        "nodemon": "^2.0.20"
     }
 }
